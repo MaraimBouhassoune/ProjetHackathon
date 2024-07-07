@@ -1,0 +1,1 @@
+<p style="color:white">Copyright <?php echo $copyright ?></p>

@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+   color:white;
+   font-family: "Roboto", sans-serif;
+}
+
+button {
+   color: black;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+   color: black;
+}
+
+input,
+textarea,
+select {
+    color: black;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    color: black;
+}
+
+#confirmationDeleteHackathon {
+    color: black;
+}
+
+body {
+   background-image: url(../img/back2.jpeg);
+   width: 99%;
+   display: flex;
+   flex-direction: column;
+   min-height: 98vh;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   backdrop-filter: blur(2px);
+}
+/* body { 
+   background-image: url(../img/back2.jpeg);
+   margin : 20px;
+   width: 97%;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    backdrop-filter: blur(2px);
+} */
+header{
+   /* border:1px solid blue; */
+   text-align: center;
+}
+header p{
+   padding:0px 200px 0px 200px
+}
+
+
+nav{
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 1px solid rgb(255, 255, 255);
+}
+nav div form{
+   display: flex;
+   margin: 0px;
+   text-align: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+nav div div{
+   text-align: center;
+   padding-bottom: 45px;
+   padding-top: 8px;
+}
+nav div form label {
+   background-color: pink;
+}
+nav div form label.loginUser {
+   background-color: lightgreen;
+   margin-bottom: 5px;
+}
+
+nav ul {
+   display:flex;
+   padding-left: 0px;
+   
+}
+nav ul li a{
+ text-decoration: none;
+ color: rgb(255, 255, 255);
+}
+nav ul li{
+   list-style-type: none;
+   padding: 20px;
+  
+}
+
+nav ul li:hover{
+  background-color: #33c7cc;
+  border-radius: 7px;
+}
+
+nav form button {
+   color: black;
+}
+
+nav form button[name="okDeconnexion"] {
+   background-color: pink;
+   color: black;
+}
+
+main{
+   border:1px solid rgb(255, 255, 255);
+   padding:10px 30px 25px 30px; /* ou :25px*/
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: right;
+   align-items: center;
+   text-align: right;
+   color: rgb(255, 255, 255);
+}
+
+main td{
+   padding:0px 10px 0px 10px;
+   text-align: center;
+}
+main #art1 p {
+   background-color: aquamarine;
+   padding: 20px;
+}
+
+main #art1 p img {
+   float:right;
+}
+main #art1 p .Crutzen {
+   color: rgb(255, 255, 255);
+   font-size:x-large;
+}
+main div{
+   display:flex;
+}
+main div #art2{
+   flex:1;
+}
+main div #art3{
+   flex:1;
+}
+main div #art3 table td{
+   padding:0px 5px 0px 5px;
+}
+
+#Login::placeholder {
+    color: white;
+}
+
+footer{
+   display: flex;
+   flex-wrap : wrap;
+}
+footer ul, footer ol{
+   margin:20px;
+   border:2px solid rgb(255, 255, 255);
+   flex:1
+}
+footer p{
+   width: 100%; /* ça permet que le p passe à la ligne malgré le diplay flex */
+   margin:0px;
+   font-style: italic;
+   font-size:smaller;
+   margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+   body { 
+      margin : 10px;
+   }
+   header p{
+      display:none;
+   }
+   nav ul{
+      /* display:block; : solution sale */
+      flex-direction: column;
+   }
+   nav ul li{
+      padding: 2px;
+   }
+   main #art1{
+      height:300px;
+      overflow: scroll;
+   }
+   main div #art2 {
+      display:none;
+   }
+   footer{
+      display: block;
+   }
+   footer ol{
+      display:none
+   }
+}
+
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(255, 255, 255); /* Fallback color */
+   background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+   background-color: #fefefe;
+   margin: 15% auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 344px;
+   padding-bottom: 50px;
+   border-radius: 30px;
+}
+
+
+.close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   cursor: pointer;
+}
+
+body {
+   background-image: url(../img/back2.jpeg);
+   width: 99%;
+   display: flex;
+   flex-direction: column;
+   min-height: 98vh;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   backdrop-filter: blur(2px);
+}
+
+header{
+   /* border:1px solid blue; */
+   text-align: center;
+}
+header p{
+   padding:0px 200px 0px 200px
+}
+
+
+nav{
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 1px solid rgb(255, 255, 255);
+}
+nav div form{
+   display: flex;
+   margin: 0px;
+   text-align: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+nav div div{
+   text-align: center;
+   padding-bottom: 45px;
+   padding-top: 8px;
+}
+nav div form label {
+   background-color: pink;
+}
+nav div form label.loginUser {
+   background-color: lightgreen;
+   margin-bottom: 5px;
+}
+
+nav ul {
+   display:flex;
+   padding-left: 0px;
+   
+}
+nav ul li a{
+ text-decoration: none;
+ color: rgb(255, 255, 255);
+}
+nav ul li{
+   list-style-type: none;
+   padding: 20px;
+  
+}
+
+nav ul li:hover{
+  background-color: #33c7cc;
+  border-radius: 7px;
+}
+nav form button[name="okDeconnexion"] {
+   background-color: pink;
+   color: black;
+   /* Autres styles selon vos besoins */
+}
+
+main{
+   border:1px solid rgb(255, 255, 255);
+   padding:10px 30px 25px 30px; /* ou :25px*/
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: right;
+   align-items: center;
+   text-align: right;
+   color: rgb(255, 255, 255);
+}
+main td{
+   padding:0px 10px 0px 10px;
+   text-align: center;
+}
+main #art1 p {
+   background-color: aquamarine;
+   padding: 20px;
+}
+
+main #art1 p img {
+   float:right;
+}
+main #art1 p .Crutzen {
+   color: rgb(255, 255, 255);
+   font-size:x-large;
+}
+main div{
+   display:flex;
+}
+main div #art2{
+   flex:1;
+}
+main div #art3{
+   flex:1;
+}
+main div #art3 table td{
+   padding:0px 5px 0px 5px;
+}
+
+footer{
+   display: flex;
+   flex-wrap : wrap;
+}
+footer ul, footer ol{
+   margin:20px;
+   border:2px solid rgb(255, 255, 255);
+   flex:1
+}
+footer p{
+   width: 100%; /* ça permet que le p passe à la ligne malgré le diplay flex */
+   margin:0px;
+   font-style: italic;
+   font-size:smaller;
+   margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+   body { 
+      margin : 10px;
+   }
+   header p{
+      display:none;
+   }
+   nav ul{
+      /* display:block; : solution sale */
+      flex-direction: column;
+   }
+   nav ul li{
+      padding: 2px;
+   }
+   main #art1{
+      height:300px;
+      overflow: scroll;
+   }
+   main div #art2 {
+      display:none;
+   }
+   footer{
+      display: block;
+   }
+   footer ol{
+      display:none
+   }
+}
+
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(255, 255, 255); /* Fallback color */
+   background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+   background-color: #fefefe;
+   margin: 15% auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 344px;
+   padding-bottom: 50px;
+   border-radius: 30px;
+}
+
+
+.close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   cursor: pointer;
+}
+
+/* CSS Variables for Easy Theme Management */
+:root {
+   --form-background: rgba(255, 255, 255, 0.2);
+   --form-backdrop-filter: blur(10px);
+   --input-background: rgba(255, 255, 255, 0.25);
+   --input-icon-color: #fff;
+   --input-border-radius: 20px;
+   --button-background: linear-gradient(145deg, #21D4FD, #B721FF);
+   --button-hover-opacity: 0.9;
+   --link-color: #fff;
+   --link-hover-decoration: underline;
+ }
+ 
+ .login-page body {
+   font-family: 'Poppins', sans-serif; /* Match the font from the desired form style */
+ }
+ 
+ .login-page main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* min-height: 100vh; */
+ }
+ 
+ .login-page main section {
+   background: var(--form-background);
+   backdrop-filter: var(--form-backdrop-filter);
+   border-radius: 15px;
+   padding: 40px;
+   width: 100%;
+   max-width: 450px; /* Adjust width as necessary */
+   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+ }
+ 
+ .login-page main form {
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ .login-page main h1 {
+   text-align: center;
+   color: white;
+   margin-bottom: 2em;
+ }
+ 
+ .login-page main .place {
+   position: relative;
+   margin-bottom: 1em;
+ }
+ 
+ .login-page main .place input {
+   width: 93%;
+   padding: 15px;
+   border: none;
+   border-radius: var(--input-border-radius);
+   background: var(--input-background);
+   color: white;
+   font-size: 16px;
+ }
+ 
+ .login-page main .place box-icon {
+   position: absolute;
+   top: 50%;
+   right: 7px;
+   transform: translateY(-50%);
+   color: var(--input-icon-color);
+ }
+ 
+ .login-page main select {
+   padding: 15px;
+   border-radius: var(--input-border-radius);
+   background: rgb(0 0 0 / 25%);
+   color: white;
+   margin-bottom: 1em;
+ }
+ 
+ 
+ .login-page main .remember {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: white;
+   margin-bottom: 1em;
+ }
+ 
+ .login-page main .remember .link {
+   color: var(--link-color);
+   text-decoration: none;
+ }
+ 
+ .login-page main .remember .link:hover {
+   text-decoration: var(--link-hover-decoration);
+ }
+ 
+ .login-page main .btn {
+   padding: 15px;
+   border: none;
+   border-radius: var(--input-border-radius);
+   background: var(--button-background);
+   color: black;
+   font-size: 16px;
+   cursor: pointer;
+   transition: opacity 0.3s;
+ }
+ 
+ .login-page main .btn:hover {
+   opacity: var(--button-hover-opacity);
+ }
+ 
+ .login-page main .register {
+   text-align: center;
+   color: white;
+ }
+ 
+ .login-page main .register a {
+   color: var(--link-color);
+   text-decoration: none;
+ }
+ 
+ .login-page main .register a:hover {
+   text-decoration: var(--link-hover-decoration);
+ }
+
