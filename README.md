@@ -38,12 +38,6 @@ Développement d’une application web pour gérer les étapes d’organisation 
    - Il existe un admin, jury et participant avec les identifiants `root-root`.
 
 4. **Configurer la Connexion à la Base de Données** :
-   - Mettre à jour les variables globales dans `modele/initialisation/tools/connexionBD.php` :
-     ```php
-     $dbname_global = 'hackathonsFW';
-     $username_global = 'root';
-     $password_global = '';
-     ```
 
 ## Architecture du Projet
 
@@ -52,40 +46,37 @@ Développement d’une application web pour gérer les étapes d’organisation 
 |- index.php
 |
 |- ctrls : les controleurs
-| |
-| |- ctrl_xxx : les controleurs de l'application
-| |
-| |- appel_ctrl_xxx : les controleurs appelés par des formulaires souvent
-| |
-| |- apiHackathonsProjets : le controleur d'API
+|   |
+|   |- ctrl_xxx : les controleurs de l'application
+|   |
+|   |- appel_ctrl_xxx : les controleurs appelés par des formulaires souvent
+|   |
+|   |- apiHackathonsProjets : le controleur d'API
 |
 |- modele : la partie base de données
-| |
-| |- classes métiers : les classes
-| | |- tests_unitaires
-| |
-| |- initialisation :
-| | |- initialisation.php : les initialisation
-| | |- tools
-| | | |- connexionBD.php : la connexion à la bd
-| | | |- debug.php : les fonctions de debug
-| |
-| |- datas_sql_json
-| | |- sql
-| | | |- Create_database_hackathon.sql : le code SQL de création de la BD
-| | |- json
-| | |- pour des fichiers JSON, inutile dans notre projet
+|   |
+|   |- classes métiers : les classes
+|   |   |- tests_unitaires
+|   |
+|   |- initialisation :
+|   |   |- initialisation.php : les initialisations
+|   |   |- tools
+|   |       |- connexionBD.php : la connexion à la bd
+|   |       |- debug.php : les fonctions de debug
+|   |
+|   |- datas_sql_json
+|   |   |- sql
+|   |       |- Create_database_hackathon.sql : le code SQL de création de la BD
+|   |   |- json
+|   |       |- pour des fichiers JSON, inutile dans notre projet
 |
 |- views
-| |- les vues
+|   |- les vues
 |
 |- public : les fichiers publics pour le client
-| |- css
-| |- img
-| |- pdf
-
-yaml
-Copier le code
+|   |- css
+|   |- img
+|   |- pdf
 
 Les controleurs sont tous dans le dossier `ctrls` :
 - L'index appelle le controleur d'accueil.
