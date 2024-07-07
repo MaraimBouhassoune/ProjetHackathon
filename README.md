@@ -1,6 +1,5 @@
 # Projet Hackathon
 
-
 ### Présentation du Contexte
 Un hackathon est un événement créatif où des développeurs se réunissent pour un week-end de programmation collaborative sur un thème défini. Il vise à promouvoir l'innovation numérique au service de la société.
 
@@ -48,8 +47,9 @@ Développement d’une application web pour gérer les étapes d’organisation 
 - Implémenter des événements planifiés (procédures stockées) pour des tâches automatisées.
 
 ### Étape 7 : Hébergement
-- Choisir une plateforme d'hébergement pour l'application, en tenant compte des spécifications (300 Mo gratuits si possible).
+- Héberger l'application sur Hostinger. [Lien vers le site hébergé](https://projethackathon.fr/).
 
 ---
 
 Pour plus de détails sur le projet, consultez les fichiers spécifiques dans ce dépôt.
+Ce texte est succinct et intègre toutes les informations essentielles pour un lecteur de votre dépôt
