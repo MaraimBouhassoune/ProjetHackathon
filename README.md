@@ -1,6 +1,5 @@
 # Projet Hackathon
 
-## Cahier des Charges
 
 ### Présentation du Contexte
 Un hackathon est un événement créatif où des développeurs se réunissent pour un week-end de programmation collaborative sur un thème défini. Il vise à promouvoir l'innovation numérique au service de la société.
